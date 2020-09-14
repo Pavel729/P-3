@@ -21,6 +21,12 @@ body{
 	
 }
 
+.offset:before{
+	display: block;
+    content: "";
+    height: 6rem;
+}
+
 a{
 	text-decoration:none;
 	
@@ -81,7 +87,7 @@ aside p{
 	padding:0;
 }
 
-aside a:hover{
+aside a:hover,aside a.active{
 	background:#000;
 }
 
@@ -384,7 +390,7 @@ input[type="submit"]:hover{
 		padding:10px;
 		display:flex;
 		justify-content:space-around;
-		background:rgab(0,0,0,0.8);
+		background:black;
 		z-index:1;
 	}
 	
